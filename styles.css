@@ -264,10 +264,9 @@ header {
 
 .portfolio-grid {
     display: grid;
-    /* Reduced min-width to 300px to better fit small mobile screens */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 40px;
-    justify-content: center; /* Centers the grid itself */
+    justify-content: center;
 }
 
 .project-card {
@@ -544,11 +543,10 @@ footer {
         font-size: 2.5rem;
     }
     
-    /* Center the portfolio cards on mobile */
     .portfolio-grid {
-        grid-template-columns: 1fr; /* Force 1 column */
-        max-width: 500px; /* Prevent them from being too wide on tablets */
-        margin: 0 auto; /* Center the grid container itself */
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin: 0 auto;
     }
 
     .nav-links {
@@ -563,8 +561,6 @@ footer {
         flex-direction: column;
         padding: 40px 20px;
         border-bottom: 1px solid var(--border-color);
-        
-        /* Centered Mobile Menu */
         align-items: center; 
         text-align: center;
         gap: 2rem;
@@ -593,4 +589,34 @@ footer {
     .mobile-toggle {
         display: none;
     }
+}
+
+/* --- Success Message Styling --- */
+.success-message {
+    text-align: center;
+    padding: 40px 20px;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.success-icon {
+    font-size: 4rem;
+    color: var(--accent-secondary);
+    margin-bottom: 20px;
+    text-shadow: 0 0 20px rgba(14, 165, 233, 0.4);
+}
+
+.success-message h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.success-message p {
+    color: var(--text-muted);
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
