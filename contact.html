@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Myko | Start Your Project</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+    
+    <!-- Fonts: Space Grotesk + Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo-link">
+                <img src="images/logo.webp" alt="Myko Logo" class="logo-img">
+            </a>
+            
+            <button class="mobile-toggle">☰</button>
+
+            <nav class="nav-links">
+                <a href="index.html">Portfolio</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="contact-layout">
+                
+                <!-- Left Side: Text Info -->
+                <div class="contact-text fade-in">
+                    <h1 class="gradient-text">Let’s build your website</h1>
+                    <p>Tell me a bit about your business — no pressure, no pushy sales. I focus on creating value for local businesses.</p>
+                    
+                    <div class="included-list">
+                        <h3>What’s usually included:</h3>
+                        <ul>
+                            <li>Website design & development</li>
+                            <li>Domain name & hosting setup</li>
+                            <li>Professional email configuration</li>
+                            <li>Mobile responsiveness</li>
+                            <li>Optional ongoing support</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Right Side: Form -->
+                <div class="form-wrapper fade-in">
+                    <form action="https://formspree.io/f/myzraeay" method="POST" class="contact-form">
+                        
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" class="form-control" required placeholder="John Doe">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="business">Business Name</label>
+                            <input type="text" id="business" name="business" class="form-control" placeholder="John's Coffee Shop">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" class="form-control" required placeholder="john@example.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">How can I help?</label>
+                            <textarea id="message" name="message" class="form-control" placeholder="I need a new website for my business..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%">Send Message</button>
+                        
+                        <p class="form-note">No obligation. Just a quick chat to see if we’re a good fit.</p>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Myko – Web Design for Small Businesses</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
